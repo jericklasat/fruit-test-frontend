@@ -1,0 +1,13 @@
+.section {
+  margin-top: 50px;
+}
+
+#fruits-table_filter {
+  display: none;
+}
+
+#modal-form-message {
+  margin: 0;
+  text-align: center;
+  color: red;
+}

@@ -1,0 +1,16 @@
+#favorite-fruits-table_filter {
+  display: none;
+}
+
+#total-nutrients-container {
+  position: fixed;
+  z-index: 2;
+  top: 50%;
+  right: 10px;
+  width: 300px;
+}
+
+.collection .collection-item.avatar {
+  padding-top: 10px;
+  min-height: 60px;
+}

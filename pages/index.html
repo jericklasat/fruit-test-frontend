@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://code.jquery.com/jquery-3.7.0.min.js"
+      integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g="
+      crossorigin="anonymous"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://cdn.datatables.net/1.13.6/css/jquery.dataTables.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
+    />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script src="https://cdn.datatables.net/1.13.6/js/jquery.dataTables.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script
+      language="javascript"
+      type="text/javascript"
+      src="assets/js/common.js"
+    ></script>
+    <script
+      language="javascript"
+      type="text/javascript"
+      src="assets/js/index.js"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="assets/css/common.css"
+    />
+    <link
+      rel="stylesheet"
+      href="assets/css/index.css"
+    />
+    <title>Fruits Test</title>
+  </head>
+  <body>
+    <nav>
+      <div class="nav-wrapper">
+        <ul id="nav-mobile" class="right hide-on-med-and-down">
+          <li><a href="" id="header-login">Login</a></li>
+          <li style="display: none;"><a href="/favorites" id="favorites-link">Favorites</a></li>
+          <li style="display: none;" id="header-email"></li>
+          <li style="display: none;"><a href="" id="header-logout">Logout</a></li>
+        </ul>
+      </div>
+    </nav>
+    <div class="container">
+      <section class="section">
+        <div class="row">
+          <div class="col s12 l12">
+            <table id="fruits-table" class="stripped">
+              <thead>
+                <tr>
+                  <th>Name</th>
+                  <th>Family</th>
+                  <th>Order Name</th>
+                  <th>Genus</th>
+                  <th>Nutrition</th>
+                </tr>
+              </thead>
+              <tbody></tbody>
+            </table>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <!-- Modal Structure -->
+    <div id="login-modal" class="modal">
+      <div class="progress hidden" id="loading-progress">
+        <div class="indeterminate"></div>
+      </div>
+      <div class="modal-content">
+        <div class="modal-container">
+          <div class="row">
+            <form class="col s12" id="sign-form">
+              <div class="row">
+                <div class="input-field col s12">
+                  <input id="email" type="email" class="validate" required>
+                  <label for="email">Email</label>
+                </div>
+              </div>
+              <div class="row" style="margin-bottom: 0;">
+                <div class="input-field col s12">
+                  <input id="password" type="password" class="validate" required>
+                  <label for="password">Password</label>
+                </div>
+              </div>
+              <div class="row">
+                <div id="modal-form-message" class="input-field col s12"></div>
+                <div class="input-field col s12">
+                  <button class="waves-effect waves-light btn modal-login-btn" id="login-btn" role="button">Login</button>
+                </div>
+                <div class="input-field col s12">
+                  <button class="waves-effect waves-light green btn modal-login-btn" id="signup-btn" role="button">Signup</button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

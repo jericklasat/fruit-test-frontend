@@ -1,0 +1,32 @@
+nav {
+  background-color: green;
+}
+
+.collection .collection-item {
+  padding: 2px;
+}
+
+.modal {
+  width: 30%;
+}
+
+.modal-container {
+  padding: 25px;
+}
+
+.modal-login-btn {
+  width: 100%;
+}
+
+.modal .progress {
+  margin:0;
+}
+
+.modal .progress.hidden {
+  display: none;
+}
+
+#toast-container {
+  top: 0 !important;
+  right: 50% !important;
+}

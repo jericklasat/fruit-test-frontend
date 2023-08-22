@@ -1,0 +1,13 @@
+{
+  "name": "fruit-test-frontend",
+  "version": "1.0.0",
+  "main": "index.ts",
+  "author": "Jerick Son Icamina",
+  "license": "MIT",
+  "scripts": {
+    "dev": "http-server ./pages -p 3000"
+  },
+  "devDependencies": {
+    "http-server": "^14.1.1"
+  }
+}
